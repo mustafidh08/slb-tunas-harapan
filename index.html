@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- parallax JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="parallax.js/parallax.js"></script>
+
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Title -->
+    <title>SLB Tunas Harapan</title>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container justify-content-center">
+        <a class="navbar-brand fw-bold" href="#">SLB Tunas Harapan</a>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- form -->
+    <div class="container">
+      <div class="row">
+        <h1 style="margin-top: 6rem" class="fw-bold text-uppercase text-black text-center mb-4">Pendaftaran siswa baru</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-10 p-3 mx-auto justify-content-center">
+          <!-- Note: class .show is used for demo purposes. Remove it when using it in the real project. -->
+          <div class="alert alert-success alert-dismissible fade show d-none my-alert" id="alertExample" role="alert" data-mdb-color="secondary">
+            <i class="fas fa-check me-2"></i>
+            <b>Terimakasih!</b> Pesan anda telah kami terima.
+
+            <button type="button" class="btn-close ms-2" data-mdb-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <form name="penerimaan-siswa-baru-slb">
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            <div class="row mb-4">
+              <div class="col">
+                <div class="form-outline">
+                  <input type="text" id="form6Example1" class="form-control" name="namaLengkap" />
+                  <label class="form-label" for="form6Example1">Nama Lengkap</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col">
+                <div class="form-outline">
+                  <input type="text" id="form6Example1" class="form-control" name="namaAyah" />
+                  <label class="form-label" for="form6Example1">Nama Ayah</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-outline">
+                  <input type="text" id="form6Example2" class="form-control" name="pekerjaanAyah" />
+                  <label class="form-label" for="form6Example2">Pekerjaan Ayah</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col">
+                <div class="form-outline">
+                  <input type="text" id="form6Example1" class="form-control" name="namaIbu" />
+                  <label class="form-label" for="form6Example1">Nama Ibu</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-outline">
+                  <input type="text" id="form6Example2" class="form-control" name="pekerjaanIbu" />
+                  <label class="form-label" for="form6Example2">Pekerjaan Ibu</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Text input -->
+            <div class="form-outline mb-4">
+              <input type="text" id="form6Example3" class="form-control" name="pendidikan" />
+              <label class="form-label" for="form6Example3">Pendidikan</label>
+            </div>
+
+            <!-- Number input -->
+            <div class="form-outline mb-4">
+              <input type="text" id="form6Example6" class="form-control" name="kelas" />
+              <label class="form-label" for="form6Example6">Kelas</label>
+            </div>
+
+            <!-- Text input -->
+            <div class="form-outline mb-4">
+              <input type="text" id="form6Example4" class="form-control" name="alamat" />
+              <label class="form-label" for="form6Example4">Alamat</label>
+            </div>
+
+            <!-- Message input -->
+            <div class="form-outline mb-4">
+              <textarea class="form-control" id="form6Example7" rows="4" name="informasiLainnya"></textarea>
+              <label class="form-label" for="form6Example7">Informasi Lainnya (Opsional)</label>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Kirim</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- end form -->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- contact form google -->
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbxYZ9MZB4vDLX9Z5SINl2wRjbRCV909n9JTH5Dbi-iNH5ZWbDrH6XaFPGznS1IIWT0d/exec";
+      const form = document.forms["penerimaan-siswa-baru-slb"];
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // ketika tombol submit diklik
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            // tampilkan alert
+            myAlert.classList.toggle("d-none");
+            // reset formnya
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <!-- navbar transisi -->
+    <script>
+      const navEl = document.querySelector(".navbar");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY >= 56) {
+          navEl.classList.add("navbar-scrolled");
+        } else if (window.scrollY < 56) {
+          navEl.classList.remove("navbar-scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
